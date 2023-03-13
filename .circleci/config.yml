@@ -36,8 +36,8 @@ jobs:
       - attach_workspace:
           at: .
       - checkout
-      - run: aws s3 sync ./app/build s3://cicd-rashmi
-    
+      - run: aws s3 sync ./app/build s3://ci-cd-bucket-r
+  
 
 workflows:
   build_test_deploy:
